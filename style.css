@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+}
+
+body {
+    font-family: "Sarabun", sans-serif;
+}
+
+.slider {
+    width: 100%;
+    min-height: 80vh;
+    aspect-ratio: 16/9;
+    background: #000;
+    position: relative;
+}
+
+.slider-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(30%);
+}
+
+.slider-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 100px;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+
+.slider-content p {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.boxed {
+    max-width: 1280px;
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.dark {
+    background: #000;
+    color: #fff;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w25 {
+    width: 25%;
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+.skill {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.skill img {
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.skill h3 {
+    color: #000;
+    margin-top: 10px;
+}
+
+.boxed h3 {
+    font-size: 2rem;
+}
+
+.section .boxed {
+    color: white;
+}
+
+.parcours {
+    position: relative;
+    background-image: url('img/cvbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Garde le texte visible */
+}
+
+.parcours::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Assombrit l'image */
+    z-index: 1;
+}
+
+.parcours .boxed {
+    position: relative;
+    z-index: 2; /* Met le texte au-dessus de l'assombrissement */
+}
+
+
+.grid-formations {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.formation {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.formation-logo {
+    float: right;
+    width: 115px;
+    height: 115px;
+}
+
+.experience {
+    display: flex;
+    align-items: center; /* Alignement vertical */
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.experience img {
+    width: 200px; /* Largeur fixe */
+    height: 150px; /* Format 4:3 (200 / 150 = 4:3) */
+    object-fit: cover; /* Coupe l'image pour remplir l'espace */
+    border-radius: 10px; /* Coins arrondis pour un effet sympa */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Légère ombre */
+}
+
+
+.section.contact {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section.contact h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.section.contact p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.section.projects {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.grid-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.project {
+    display: block;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.project p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+
+.veille-technologie {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.veille-technologie a {
+    font-size: 1.5rem;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.veille-technologie a:hover {
+    text-decoration: underline;
+}
