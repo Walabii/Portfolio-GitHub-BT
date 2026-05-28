@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique : Data Scientist</title>
+    <style>
+        /* --- Styles CSS --- */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #f8f9fa;
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        section:hover {
+            transform: translateY(-2px);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .skill-category {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #eaf2f8;
+            margin-bottom: 0.5rem;
+            padding: 0.8rem 1rem;
+            border-left: 4px solid var(--secondary-color);
+            border-radius: 0 4px 4px 0;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 3rem;
+        }
+
+        /* Responsive design pour les petits écrans */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            section { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Data Scientist</h1>
+        <p>Veille Technologique</p>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Le métier de Data Scientist est né de l'explosion du volume de données (Big Data) générées par nos interactions numériques. Le Data Scientist est un professionnel capable de donner une direction dans les affaires. Son rôle est devenu indispensable pour toute entreprise souhaitant rester compétitive dans le marché.</p>
+        </section>
+
+        <section id="objectif">
+            <h2>Son Objectif Principal</h2>
+            <p>L'objectif central du Data Scientist est de <strong>transformer des données en informations stratégiques</strong> (insights). En explorant, nettoyant et modélisant d'immenses bases de données, il crée des algorithmes capables de :</p>
+            <ul>
+                <li>Prédire des tendances futures (Machine Learning).</li>
+                <li>Automatiser des décisions complexes.</li>
+                <li>Identifier de nouvelles opportunités de croissance pour l'entreprise.</li>
+                <li>Améliorer l'expérience utilisateur ou optimiser des processus industriels.</li>
+            </ul>
+        </section>
+
+        <section id="competences">
+            <h2>Compétences Requises</h2>
+            <p>Le profil d'un Data Scientist est hybride. Il requiert un mélange solide de compétences techniques et relationnelles.</p>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Compétences techniques</h3>
+                    <ul>
+                        <li><strong>Programmation :</strong> Python, R, SQL, Scala.</li>
+                        <li><strong>Mathématiques & Statistiques :</strong> Probabilités, algèbre linéaire, optimisation.</li>
+                        <li><strong>Machine Learning :</strong> Réseaux de neurones, NLP, classification, régression.</li>
+                        <li><strong>Data Visualisation :</strong> Tableau, PowerBI, Matplotlib.</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Qualités</h3>
+                    <ul>
+                        <li><strong>Business Acumen :</strong> Compréhension des enjeux de l'entreprise.</li>
+                        <li><strong>Communication :</strong> Capacité à vulgariser des résultats complexes.</li>
+                        <li><strong>Curiosité :</strong> Veille constante sur les nouvelles technologies.</li>
+                        <li><strong>Esprit critique :</strong> Rigueur dans l'analyse et l'interprétation.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>Le Data Scientist n'est pas un simple analyste, c'est un visionnaire qui utilise la donnée comme matière première pour innover. Alors que l'Intelligence Artificielle générative redessine les contours du secteur de la Tech, le métier de Data Scientist continue d'évoluer. S'il automatise de plus en plus ses tâches de nettoyage de données, son expertise en modélisation stratégique et son sens critique face aux biais algorithmiques demeurent plus cruciaux que jamais pour l'avenir de la technologie.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Veille Technologique réalisée en HTML et CSS.</p>
+    </footer>
+
+</body>
+</html>
